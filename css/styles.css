@@ -1,0 +1,295 @@
+
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+
+body{
+    background-color:  #fbfbfb;
+}
+
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+
+
+
+/*Barra de navegación*/
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+
+.inicio{
+    
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: #af599e;
+     
+}
+
+
+.barra{
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    height: 90px;
+    font-family: 'Noto Serif', serif;
+    margin-right: 0;
+    border-bottom: 25px;
+    border-bottom: ridge;
+    color:rgb(96, 93, 93);
+    box-shadow: 0px 0px 8px;
+    
+  
+} 
+
+.barra-ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    
+   
+    
+    
+}
+    
+    
+.lista{
+    font-size: 18px;
+    color: #121111;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 0 1.5rem;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    
+
+   
+}
+
+
+/*Section 1*/
+
+#foto-perfil{
+    border: 1px;
+    border-radius: 100%;
+    margin-top: 130px;
+    width: 400px;
+    
+    
+    
+
+}
+
+div{ 
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tamaño{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.bottom{
+    padding-bottom: 10px;
+    background-color: #af599e;
+    color: #fbfbfb;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 200px;
+    padding: 21px;
+   
+    
+}
+
+
+
+h1{
+    font-family: 'Noto Serif', serif;
+    font-size: 36px;
+    line-height: 1.5; 
+
+}
+
+p{
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    
+   
+}
+
+.section1{
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+/*Section 2*/
+
+h2{
+    font-family: 'Noto Serif', serif;
+    font-size: 28px;
+}
+
+.section2{
+    background-color: rgba(175, 89, 158, 0.3);
+    border-radius: 20px;
+    color: #0f0f0f;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+/*Section 3*/
+
+
+
+.iconos{
+    width: 40px;
+    
+    
+}
+.grid-icons{
+    display: block;
+    letter-spacing: 3px;
+    word-spacing: 30px;
+
+}
+
+
+
+/*Footer*/
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+footer{
+    margin-top: auto;
+    background-color: #af599e;
+    font-family: 'Noto Serif', serif;
+    width: 100%;
+    height: 90px;
+   
+}
+
+.grid{
+    font-size: 18px;
+    color: #fbfbfb;
+    display: flex;
+    display: inline;
+    text-align: center;
+    margin: 0 1.5rem;
+    
+}
+
+@media screen and (max-widht:768px)
+{.container {
+     grid-template-columns: repeat (2,1fr);}
+}
+
+@media screen and (max-widht:480px)
+{.container {
+    grid-template-columns: repeat(1,1fr);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
