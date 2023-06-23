@@ -8,7 +8,7 @@
 
 
 body{
-    background-color:  #fbfbfb;
+    background-color:  #191717ec;
 }
 
 
@@ -86,15 +86,15 @@ header {
 
 
 .barra{
-    background-color: white;
+    background-color: #191717c6;
     display: flex;
     justify-content: right;
     height: 90px;
-    font-family: 'Noto Serif', serif;
+    font-family: "Open Sans", sans-serif;
     margin-right: 0;
     border-bottom: 25px;
     border-bottom: ridge;
-    color:rgb(96, 93, 93);
+    color:rgb(247, 245, 245);
     box-shadow: 0px 0px 8px;
     
   
@@ -114,7 +114,7 @@ header {
     
 .lista{
     font-size: 18px;
-    color: #121111;
+    color: #f7f2f2;
     text-decoration: none;
     letter-spacing: 3px;
     margin: 0 1.5rem;
@@ -133,7 +133,7 @@ header {
     border: 1px;
     border-radius: 100%;
     margin-top: 130px;
-    width: 400px;
+    width: 300px;
     
     
     
@@ -172,16 +172,18 @@ div{
 
 
 h1{
-    font-family: 'Noto Serif', serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 36px;
     line-height: 1.5; 
+    color: white;
 
 }
 
 p{
-    font-family: 'Noto Serif', serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    color: white;
     
    
 }
@@ -195,16 +197,17 @@ p{
 /*Section 2*/
 
 h2{
-    font-family: 'Noto Serif', serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 28px;
+    color: white;
 }
 
 .section2{
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: rgba(175, 89, 158, 0.792);
     border-radius: 20px;
     color: #0f0f0f;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 700px;
+    margin-right: 700px;
 
 }
 
