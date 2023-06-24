@@ -81,8 +81,9 @@ header {
     font-family: 'Lobster Two', cursive;
     font-size: 40px;
     color: #af599e;
-     
+   
 }
+
 
 
 .barra{
@@ -106,9 +107,6 @@ header {
     text-decoration: none;
     align-items: center;
     
-   
-    
-    
 }
     
     
@@ -122,22 +120,58 @@ header {
     text-align: right;
     justify-content: right;
     
-
-   
 }
+
+.activo{
+    /* Estilo para la barra de navegación activa */
+
+  
+    animation-name: surprise;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    background-color: #af599e(192, 192, 199, 0.804);
+    transition: background-color 2s, color 2s;  
+    color: rgb(166, 8, 113); 
+    height: 100%;
+    
+  }
+
+  .scroll {
+    /* Estilos para la barra de navegación cuando se hace scroll */
+   
+    color: #000000; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    
+  }
 
 
 /*Section 1*/
 
+#inicio{
+    display: flex;
+}
+
 #foto-perfil{
     border: 1px;
     border-radius: 100%;
-    margin-top: 130px;
-    width: 300px;
-    
-    
-    
+    margin-top: 200px;
+    width: 300px; 
+    margin-left: 450px; 
 
+}
+
+#hola{
+    margin-top: 230px;
+    height: 150px;
+  
+}
+
+h4{
+    color: white;
 }
 
 div{ 
@@ -165,9 +199,22 @@ div{
     font-size: 20px;
     width: 200px;
     padding: 21px;
+    animation: moveButton 2s ease-in-out infinite alternate;
    
     
 }
+
+  
+  @keyframes moveButton {
+    0% {
+      transform: translateX(-6px);
+    }
+    100% {
+      transform: translateX(6px);
+    }
+  }
+
+
 
 
 
@@ -189,8 +236,8 @@ p{
 }
 
 .section1{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 400px;
+    margin-right: 400px;
 
 }
 
@@ -211,9 +258,29 @@ h2{
 
 }
 
-/*Section 3*/
+/*Section 3 Proyectos*/
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0fe7;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#foto-proyectos{
+    height: 400px;
+}
+
+h3{
+    color: white;
+    size: 55px;
+}
 
 
+/*Section 4 contacto*/
 
 .iconos{
     width: 40px;
@@ -226,6 +293,18 @@ h2{
     word-spacing: 30px;
 
 }
+
+#contacto{
+    background-color: #af599e;
+}
+
+.iconos {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .iconos:hover {
+    transform: scale(1.1);
+  }
 
 
 
