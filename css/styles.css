@@ -41,6 +41,7 @@ main {
     margin: auto;
 }
 
+
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
@@ -79,8 +80,14 @@ header {
 .inicio{
     
     font-family: 'Lobster Two', cursive;
-    font-size: 40px;
+    font-size: 30px;
     color: #af599e;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    height: 30px;
+    margin-left: 30px;
+    
    
 }
 
@@ -89,9 +96,9 @@ header {
 .barra{
     background-color: #191717c6;
     display: flex;
-    justify-content: right;
+    text-align: right;
     height: 90px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "serif";
     margin-right: 0;
     border-bottom: 25px;
     border-bottom: ridge;
@@ -106,19 +113,21 @@ header {
     list-style: none;
     text-decoration: none;
     align-items: center;
+    margin-left: 1250px;
     
 }
     
     
 .lista{
-    font-size: 18px;
+    font-size: 20px;
     color: #f7f2f2;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin: 0 1.5rem;
     display: flex;
     text-align: right;
     justify-content: right;
+    
     
 }
 
@@ -169,6 +178,7 @@ header {
     height: 150px;
   
 }
+
 
 h4{
     color: white;
@@ -276,15 +286,26 @@ h2{
 
 h3{
     color: white;
-    size: 55px;
+    font-size: 35px;
 }
 
+.proyectos1{
+    width: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+.proyectos1:hover {
+    transform: scale(1.1);
+  }
+
+.iconos-proyectos{
+    width: 80px;
+    align-items: center;
+}
 
 /*Section 4 contacto*/
 
 .iconos{
     width: 40px;
-    
     
 }
 .grid-icons{
@@ -338,12 +359,12 @@ footer{
     
 }
 
-@media screen and (max-widht:768px)
+@media screen and (max-width:768px)
 {.container {
      grid-template-columns: repeat (2,1fr);}
 }
 
-@media screen and (max-widht:480px)
+@media screen and (max-width:480px)
 {.container {
     grid-template-columns: repeat(1,1fr);}
 }

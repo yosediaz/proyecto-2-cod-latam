@@ -39,18 +39,35 @@ window.addEventListener('scroll', () => {
   bottom.style.transform = `translateY(${scrollY}px)`;
 });
 
-// Obtener todos los elementos con la clase "section3"
+
 const section3Items = document.querySelectorAll('.section3');
 
 // Recorrer cada elemento y agregar los eventos
 section3Items.forEach(item => {
   item.addEventListener('mouseover', () => {
-    // Al pasar el mouse por encima, aumentar el tamaño de las letras
+   
     item.style.transform = 'scale(1.1)';
   });
 
   item.addEventListener('mouseout', () => {
-    // Al sacar el mouse, volver al tamaño original de las letras
+  
     item.style.transform = 'scale(1)';
   });
 });
+
+const hola = document.getElementById('hola');
+
+
+hola.addEventListener('mouseover', function() {
+
+  hola.style.transform = 'translateX(20px)';
+ 
+});
+
+
+hola.addEventListener('mouseout', function() {
+
+  hola.style.transform = 'translateX(0)';
+  
+});
+
