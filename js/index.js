@@ -1,35 +1,20 @@
-// Obtener todos los elementos <a> dentro de la barra de navegación
-const elementosA = document.querySelectorAll(".barra-ul li a");
 
-// Agregar el evento click a cada enlace
-elementosA.forEach((enlace) => {
-  enlace.addEventListener("click", function (event) {
-    // Remover la clase "activo" de todos los elementos <a>
-    elementosA.forEach((enlace) => {
-      enlace.classList.remove("activo");
-    });
+// Cambio de color al hacer click en el menú
+const menuItems = document.querySelectorAll('.menu-item');
 
-    // Agregar la clase "activo" al enlace seleccionado
-    this.classList.add("activo");
+// Agregar el evento de clic a cada elemento
+menuItems.forEach(item => {
+  item.addEventListener('click', function() {
+    // Quitar la clase "active" de todos los elementos del menú
+    menuItems.forEach(item => item.classList.remove('active'));
+
+    // Agregar la clase "active" al elemento del menú clicado
+    this.classList.add('active');
   });
 });
 
-// Obtener la barra de navegación
-const barra = document.querySelector('.barra');
 
-// Obtener la posición inicial de la barra de navegación
-const barraOffsetTop = barra.offsetTop;
-
-// Función para agregar o quitar la clase "scroll" en la barra de navegación
-function toggleBarraScroll() {
-  if (window.pageYOffset >= barraOffsetTop) {
-    barra.classList.add('scroll');
-  } else {
-    barra.classList.remove('scroll');
-  }
-}
-
-// Agregar el evento scroll al documento
+// Evento scroll al documento
 document.addEventListener('scroll', toggleBarraScroll);
 
 const bottom = document.querySelector('.bottom');
@@ -40,9 +25,10 @@ window.addEventListener('scroll', () => {
 });
 
 
+// Recorrer cada elemento y agregar los eventos
 const section3Items = document.querySelectorAll('.section3');
 
-// Recorrer cada elemento y agregar los eventos
+
 section3Items.forEach(item => {
   item.addEventListener('mouseover', () => {
    
@@ -55,19 +41,6 @@ section3Items.forEach(item => {
   });
 });
 
-const hola = document.getElementById('hola');
 
 
-hola.addEventListener('mouseover', function() {
-
-  hola.style.transform = 'translateX(20px)';
- 
-});
-
-
-hola.addEventListener('mouseout', function() {
-
-  hola.style.transform = 'translateX(0)';
-  
-});
 

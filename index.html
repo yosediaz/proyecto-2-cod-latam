@@ -6,34 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoselyn Díaz</title>
     <link rel="shortcut icon" href="./img/favicon.png.png">
-   
-
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 </head>
 
 
 <body>
-    <header>
+   <!--Barra de navegación-->
+   <nav class="barra">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./img/Imagen2.png" alt="logo" class="logo">
+        </a>
+        <ul>
+            <li><a class="menu-item" class="active" href="#inicio">Inicio</a></li>
+            <li><a class="menu-item" href="#proyectos">Proyectos</a></li>
+            <li><a class="menu-item" href="#contacto">Contacto</a></li>
+        </ul>
+   </nav>
 
-           <!--Barra de navegación-->
-        <section class="wrapper">
-            
-            <nav class="barra">
-                <div><li class="inicio"> <a href="#inicio"  >Yoselyn    Díaz</a></li></div>
-                  <ul class="barra-ul" id="barra-ul">
-    
-                    <li class="lista"> <a href="#inicio">Inicio</a></li>
-                    <li class="lista"> <a href="#proyectos">Proyectos</a></li>
-                    <li class="lista"> <a href="#contacto">Contacto</a></li>
-                    
-                  </ul>
-            </nav>
-        </section>       
-    </header>
-
-    
 
     <!--section 1-->
     <main  >
@@ -46,7 +42,7 @@
         </div>
 
         <div id="hola">
-            <h1>Hola! Soy Yoselyn Díaz</h1> <br>
+            <h1>Yoselyn Díaz</h1> <br>
             <p class="section1"> Actualmente soy estudiante de Desarrollo Web Full Stack, donde he logrado aprender tecnologías como HTML, CSS, JavaScript y React.JS. Herramientas con las cuales he realizado sitios webs complejos. </p>
         </div>
     </section>
@@ -91,7 +87,7 @@
 
         <div class="section3">
             <br>
-            <p class="proyectos1"><a href="https://github.com/yosediaz/harrypotter.git"</a>
+            <p class="proyectos1"><a href="https://yosediaz.github.io/harrypotter/"</a>
             <img src="img/Harry-Potter.png" alt="logo" class="iconos-proyectos"></p>
             <img src="img/proyecto3.jpg" alt="proyecto3" id="foto-proyectos">
 
