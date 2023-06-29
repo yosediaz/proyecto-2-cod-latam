@@ -2,27 +2,25 @@
 // Cambio de color al hacer click en el menú
 const menuItems = document.querySelectorAll('.menu-item');
 
-// Agregar el evento de clic a cada elemento
+
 menuItems.forEach(item => {
   item.addEventListener('click', function() {
-    // Quitar la clase "active" de todos los elementos del menú
+    
     menuItems.forEach(item => item.classList.remove('active'));
 
-    // Agregar la clase "active" al elemento del menú clicado
+   
     this.classList.add('active');
   });
+
+  var checkbox = document.getElementById('check');
+
+menuItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+        checkbox.checked = false;
+    });
+});
 });
 
-
-// Evento scroll al documento
-document.addEventListener('scroll', toggleBarraScroll);
-
-const bottom = document.querySelector('.bottom');
-
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  bottom.style.transform = `translateY(${scrollY}px)`;
-});
 
 
 // Recorrer cada elemento y agregar los eventos
@@ -40,6 +38,9 @@ section3Items.forEach(item => {
     item.style.transform = 'scale(1)';
   });
 });
+
+
+
 
 
 
