@@ -645,6 +645,14 @@ footer{
         margin: 20px;
         font-size: 15px;
     }
+
+    #foto-proyecto{
+        height:250px;
+        margin: 30px;
+    }
+    .iconos{
+        width: 30px;
+    }
 }
 
 
