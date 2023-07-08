@@ -63,7 +63,7 @@ a {
 
 nav{
     background: black;
-    height: 80px;
+    height: 120px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -75,7 +75,7 @@ nav{
     padding: 20px 50px;
 }
 .logo{
-    height: 50px;
+    height: 80px;
 }
 nav ul{
     float: right;
@@ -83,7 +83,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    line-height: 80px;
+    line-height: 120px;
     margin: 0 5px;
 }
 nav ul li a{
@@ -302,8 +302,18 @@ h3{
 
 /*Section 4 contacto*/
 
+h4{
+   
+    margin-bottom: 12px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 36px;
+    line-height: 1.7; 
+    color: rgb(240, 9, 159);
+    letter-spacing: 3px;
+}
+
 .iconos{
-    width: 40px;
+    width: 100px;
     
 }
 .grid-icons{
@@ -434,6 +444,9 @@ footer{
     }
 }
 @media (max-width: 858px){
+    body{
+        background-color: rgb(145, 121, 106);
+    }
     .checkbtn{
         display: block;
     }
@@ -548,6 +561,9 @@ footer{
 }
 
 @media (max-width: 1730px){
+    body{
+        background-color: rgb(139, 109, 190);
+    }
     .container{
         flex-direction: column;
         justify-content: center;
@@ -628,6 +644,9 @@ footer{
 }
 
 @media (max-width: 767px){
+    body{
+        background-color: rgba(59, 58, 60, 0.677);
+    }
     .section1{
         align-items: center;
         width: 300px;
