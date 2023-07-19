@@ -313,7 +313,7 @@ h4{
 }
 
 .iconos{
-    width: 100px;
+    width: 40px;
     
 }
 .grid-icons{
@@ -444,9 +444,7 @@ footer{
     }
 }
 @media (max-width: 858px){
-    body{
-        background-color: rgb(145, 121, 106);
-    }
+    
     .checkbtn{
         display: block;
     }
@@ -561,9 +559,7 @@ footer{
 }
 
 @media (max-width: 1730px){
-    body{
-        background-color: rgb(139, 109, 190);
-    }
+   
     .container{
         flex-direction: column;
         justify-content: center;
@@ -644,9 +640,7 @@ footer{
 }
 
 @media (max-width: 767px){
-    body{
-        background-color: rgba(59, 58, 60, 0.677);
-    }
+    
     .section1{
         align-items: center;
         width: 300px;
@@ -671,6 +665,9 @@ footer{
     }
     .iconos{
         width: 30px;
+    }
+    h4{
+        font-size: 20px;
     }
 }
 
